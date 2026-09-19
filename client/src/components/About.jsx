@@ -50,7 +50,7 @@ export default function About() {
                 </li>
                 <li>
                   <span>Experience</span>
-                  <strong>2+ years</strong>
+                  <strong>1+ years</strong>
                 </li>
                 <li>
                   <span>Focus</span>

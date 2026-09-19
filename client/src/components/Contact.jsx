@@ -4,8 +4,8 @@ import useReveal from '../hooks/useReveal';
 import './contact.css';
 
 const CHANNELS = [
-  { icon: '✉️', label: 'Email', value: 'samuelbinogma0@gmail.com', href: 'mailto:samuelbinogma0@gmail.com' },
-  { icon: '💬', label: 'LinkedIn', value: '/in/alexcarter', href: 'https://www.linkedin.com/' },
+  { icon: '✉️', label: 'Email', value: 'sbinogma41@gmail.com', href: 'mailto:sbinogma41@gmail.com' },
+  { icon: '💬', label: 'LinkedIn', value: '/in/samuel-binogma', href: 'https://www.linkedin.com/in/samuel-binogma-68969720b' },
   { icon: '🐙', label: 'GitHub', value: '@samuelbinogma', href: 'https://github.com/samuelbinogma' },
 ];
 
@@ -82,7 +82,7 @@ export default function Contact() {
             <div className="contact__card-note">
               <span>📍</span>
               <p>
-                Based in <strong>Lisbon</strong> — working with clients worldwide, all
+                Based in <strong>Accra,Ghana</strong> — working with clients worldwide, all
                 time zones friendly.
               </p>
             </div>
@@ -162,13 +162,13 @@ export default function Contact() {
                 ✕ The backend is offline. Start it with{' '}
                 <code className="contact__code">npm run dev</code> inside{' '}
                 <code className="contact__code">server/</code>, or{' '}
-                <a href="mailto:samuelbinogma0@gmail.com">email me directly</a>.
+                <a href="mailto:sbinogma41@gmail.com">email me directly</a>.
               </p>
             )}
             {status === 'error' && (
               <p className="contact__status contact__status--err">
                 ✕ The server couldn't accept the message.{' '}
-                <a href="mailto:samuelbinogma0@gmail.com">Email me directly</a> instead.
+                <a href="mailto:sbinogma41@gmail.com">Email me directly</a> instead.
               </p>
             )}
           </form>

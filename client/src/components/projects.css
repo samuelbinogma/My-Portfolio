@@ -17,8 +17,8 @@
 
 .project-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(139, 125, 255, 0.45);
-  box-shadow: 0 26px 60px -22px rgba(0, 0, 0, 0.7);
+  border-color: rgba(63, 115, 132, 0.4);
+  box-shadow: 0 26px 60px -22px rgba(110, 96, 74, 0.4);
 }
 
 .project-card--featured {
@@ -85,7 +85,7 @@
   border-radius: 99px;
   font-size: 0.75rem;
   font-weight: 600;
-  color: #07070f;
+  color: #0d2033;
   background: rgba(255, 255, 255, 0.88);
   box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.3);
 }
@@ -105,8 +105,8 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--primary-soft);
-  background: rgba(139, 125, 255, 0.14);
-  border: 1px solid rgba(139, 125, 255, 0.28);
+  background: rgba(63, 115, 132, 0.1);
+  border: 1px solid rgba(63, 115, 132, 0.24);
   padding: 4px 10px;
   border-radius: 99px;
 }
@@ -135,7 +135,7 @@
   font-size: 0.76rem;
   font-weight: 500;
   color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(110, 96, 74, 0.05);
   border: 1px solid var(--border);
   padding: 5px 11px;
   border-radius: 99px;

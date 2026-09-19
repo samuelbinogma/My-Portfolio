@@ -2,7 +2,7 @@
   margin-top: 60px;
   padding: 64px 0 0;
   border-top: 1px solid var(--border);
-  background: linear-gradient(180deg, transparent, rgba(139, 125, 255, 0.05));
+  background: linear-gradient(180deg, transparent, rgba(63, 115, 132, 0.05));
 }
 
 .footer__inner {
@@ -21,7 +21,7 @@
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 0.95rem;
-  color: #07070f;
+  color: #0d2033;
   background: var(--gradient);
 }
 

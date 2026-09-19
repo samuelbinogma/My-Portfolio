@@ -129,14 +129,14 @@
 }
 
 .btn--primary {
-  color: #07070f;
+  color: #0d2033;
   background: var(--gradient);
-  box-shadow: 0 10px 30px -8px rgba(139, 125, 255, 0.7);
+  box-shadow: 0 10px 30px -8px rgba(63, 115, 132, 0.35);
 }
 
 .btn--primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 40px -8px rgba(79, 224, 217, 0.55);
+  box-shadow: 0 16px 40px -8px rgba(63, 115, 132, 0.35);
 }
 
 .btn--ghost {
@@ -166,7 +166,7 @@
 .hero__stats strong {
   font-family: var(--font-display);
   font-size: 1.75rem;
-  background: var(--gradient);
+  background: var(--gradient-deep);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -188,9 +188,9 @@
 .hero__card {
   width: min(430px, 100%);
   border-radius: var(--radius);
-  background: linear-gradient(160deg, rgba(139, 125, 255, 0.12), rgba(79, 224, 217, 0.06));
-  border: 1px solid var(--border-strong);
-  box-shadow: var(--shadow-lg);
+  background: linear-gradient(165deg, #203640, #142932);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 70px -24px rgba(32, 45, 38, 0.5);
   transform: perspective(1200px) rotateY(-7deg) rotateX(4deg);
   transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -204,7 +204,7 @@
   align-items: center;
   gap: 12px;
   padding: 14px 18px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero__card-dots {
@@ -239,12 +239,12 @@
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
   font-size: 0.86rem;
   line-height: 1.85;
-  color: var(--text);
+  color: #e7ecef;
   overflow-x: auto;
 }
 
 .c-dim {
-  color: var(--text-soft);
+  color: #82989c;
 }
 .c-key {
   color: var(--primary-soft);

@@ -51,10 +51,10 @@ const FALLBACK = [
 ];
 
 const COVERS = [
-  'linear-gradient(135deg, #6d5bff, #4fe0d9)',
-  'linear-gradient(135deg, #ff6ecb, #ffb86b)',
-  'linear-gradient(135deg, #4fe0d9, #38a3d9)',
-  'linear-gradient(135deg, #8b7dff, #ff6ecb)',
+  'linear-gradient(135deg, #35798d, #bcd7d6)',
+  'linear-gradient(135deg, #6fa3b7, #dce8e2)',
+  'linear-gradient(135deg, #3f7384, #b8d5cf)',
+  'linear-gradient(135deg, #7fb1c0, #c9a76a)',
 ];
 
 const monogram = (title) => title.replace(/[^a-z0-9]/gi, '').slice(0, 2).toUpperCase();

@@ -13,7 +13,7 @@
 
 .about__bio p strong {
   color: var(--text);
-  background: linear-gradient(120deg, rgba(139, 125, 255, 0.28), rgba(79, 224, 217, 0.28));
+  background: linear-gradient(120deg, rgba(63, 115, 132, 0.16), rgba(188, 215, 214, 0.36));
   padding: 1px 7px;
   border-radius: 6px;
   font-weight: 600;
@@ -22,7 +22,7 @@
 .about__card {
   border-radius: var(--radius);
   padding: 26px;
-  background: linear-gradient(160deg, var(--surface), rgba(139, 125, 255, 0.06));
+  background: linear-gradient(160deg, var(--surface), rgba(63, 115, 132, 0.06));
   border: 1px solid var(--border-strong);
   box-shadow: var(--shadow-lg);
 }
@@ -43,7 +43,7 @@
   place-items: center;
   font-size: 1.7rem;
   background: var(--gradient);
-  box-shadow: 0 8px 24px -6px rgba(139, 125, 255, 0.6);
+  box-shadow: 0 8px 24px -6px rgba(63, 115, 132, 0.35);
 }
 
 .about__card-top h3 {
@@ -106,7 +106,7 @@
 .about__hl:hover {
   transform: translateY(-6px);
   border-color: var(--primary);
-  box-shadow: 0 22px 50px -20px rgba(139, 125, 255, 0.5);
+  box-shadow: 0 22px 50px -20px rgba(63, 115, 132, 0.3);
 }
 
 .about__hl-icon {
@@ -116,8 +116,8 @@
   height: 52px;
   border-radius: 14px;
   font-size: 1.4rem;
-  background: rgba(139, 125, 255, 0.14);
-  border: 1px solid rgba(139, 125, 255, 0.3);
+  background: rgba(63, 115, 132, 0.1);
+  border: 1px solid rgba(63, 115, 132, 0.26);
 }
 
 .about__hl h3 {
