@@ -15,7 +15,7 @@ const validEmail = (e) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
 export default function Contact() {
   const [form, setForm] = useState(initialState);
   const [errors, setErrors] = useState({});
-  const [status, setStatus] = useState('idle'); // idle | sending | success | error
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error | offline
   const ref = useRef(null);
   useReveal(ref);
 
@@ -43,8 +43,8 @@ export default function Contact() {
       await sendMessage(form);
       setStatus('success');
       setForm(initialState);
-    } catch {
-      setStatus('error');
+    } catch (err) {
+      setStatus(err.code === 'NETWORK' ? 'offline' : 'error');
     }
   };
 
@@ -154,12 +154,21 @@ export default function Contact() {
 
             {status === 'success' && (
               <p className="contact__status contact__status--ok">
-                ✓ Message sent! I&apos;ll get back to you soon.
+                ✓ Message sent! I'll get back to you soon.
+              </p>
+            )}
+            {status === 'offline' && (
+              <p className="contact__status contact__status--err">
+                ✕ The backend is offline. Start it with{' '}
+                <code className="contact__code">npm run dev</code> inside{' '}
+                <code className="contact__code">server/</code>, or{' '}
+                <a href="mailto:samuelbinogma0@gmail.com">email me directly</a>.
               </p>
             )}
             {status === 'error' && (
               <p className="contact__status contact__status--err">
-                ✕ Couldn&apos;t send right now. Please email me directly.
+                ✕ The server couldn't accept the message.{' '}
+                <a href="mailto:samuelbinogma0@gmail.com">Email me directly</a> instead.
               </p>
             )}
           </form>

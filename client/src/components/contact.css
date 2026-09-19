@@ -187,6 +187,27 @@
   border: 1px solid rgba(255, 92, 122, 0.3);
 }
 
+.contact__status a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact__status a:hover {
+  color: var(--text);
+}
+
+.contact__code {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.8em;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1px 6px;
+  color: var(--text);
+}
+
 @media (max-width: 900px) {
   .contact__grid {
     grid-template-columns: 1fr;
