@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import Message from '../models/Message.js';
+import { sendContactEmail } from '../config/mailer.js';
 
 const router = Router();
 
@@ -19,7 +20,19 @@ router.post('/', async (req, res) => {
   }
   try {
     const saved = await Message.create({ name, email, subject, message });
-    res.status(201).json({ message: 'Message received — thank you!', id: saved._id });
+    try {
+      await sendContactEmail({ name, email, subject, message });
+    } catch (mailErr) {
+      console.error(`Failed to email contact message: ${mailErr.message}`);
+      return res
+        .status(502)
+        .json({ message: 'Message saved, but the email could not be sent.' });
+    }
+    res.status(201).json({
+      message: 'Message received — thank you!',
+      id: saved._id,
+      emailed: true,
+    });
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
