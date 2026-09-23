@@ -20,7 +20,7 @@ export default function Skills() {
   const [skills, setSkills] = useState(null);
   const [offline, setOffline] = useState(false);
   const ref = useRef(null);
-  useReveal(ref);
+  useReveal(ref, [skills]);
 
   useEffect(() => {
     let mounted = true;

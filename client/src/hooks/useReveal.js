@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export default function useReveal(targetRef) {
+export default function useReveal(targetRef, deps = []) {
   useEffect(() => {
     const root = targetRef?.current ?? document;
     const elements = root.querySelectorAll('.reveal:not(.is-visible)');
@@ -20,5 +20,6 @@ export default function useReveal(targetRef) {
 
     elements.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
-  }, [targetRef]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [targetRef, ...deps]);
 }

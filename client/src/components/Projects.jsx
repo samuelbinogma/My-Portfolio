@@ -63,7 +63,7 @@ export default function Projects() {
   const [projects, setProjects] = useState(null);
   const [offline, setOffline] = useState(false);
   const ref = useRef(null);
-  useReveal(ref);
+  useReveal(ref, [projects]);
 
   useEffect(() => {
     let mounted = true;
